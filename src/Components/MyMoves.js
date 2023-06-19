@@ -16,7 +16,7 @@ const MyMoves = () => {
       <div className="container-fluid mt-5">
         <div className="row">
           <div className="col">
-            <h3 style={{ color: "orange" }}>My Moves</h3>
+            <h3 style={{ color: "black" }}>My Moves</h3>
             {goods.map((item) => {
               return (
                 <div
@@ -25,7 +25,7 @@ const MyMoves = () => {
                 >
                   <div className="row p-2">
                     <div className="col col-md-4">
-                      <h5 style={{ color: "orange" }}>From</h5>
+                      <h5 style={{ color: "black" }}>From</h5>
                       {item.moving_from}
                     </div>
                     <div className="col col-md-2">
@@ -42,18 +42,16 @@ const MyMoves = () => {
                   </div>
                   <div className="mt-3 mb-3">
                     <i className="fa-solid fa-house fa-lg text-danger ml-5 mr-2"></i>
-                    <span style={{ color: "orange" }}>
-                      {item.property_size}
-                    </span>
+                    <span style={{ color: "black" }}>{item.property_size}</span>
                     <i className="fa-solid fa-building fa-lg text-danger ml-5 mr-2"></i>
-                    <span style={{ color: "orange" }}>{item.new_floor_no}</span>
+                    <span style={{ color: "black" }}>{item.new_floor_no}</span>
                     <i className="fa-solid fa-route fa-lg text-danger ml-5 mr-2"></i>
-                    <span style={{ color: "orange" }}>{item.distance}</span>
+                    <span style={{ color: "black" }}>{item.distance}</span>
                     <i className="fa-solid fa-truck fa-lg text-danger ml-5 mr-2"></i>
-                    <span style={{ color: "orange" }}>{item.moving_on}</span>
+                    <span style={{ color: "black" }}>{item.moving_on}</span>
                     <i className="fa-solid fa-pencil ml-5"></i>
                     <i className="fa-solid fa-square-check ml-5 text-danger fa-lg mr-2"></i>
-                    <span style={{ color: "orange" }}>Is Flexible</span>
+                    <span style={{ color: "black" }}>Is Flexible</span>
                     <a
                       className="btn btn-outline-danger ml-5 px-3"
                       data-bs-toggle="collapse"
@@ -70,7 +68,7 @@ const MyMoves = () => {
                     </button>
                     <br />
                     <i className="fa-sharp fa-solid fa-triangle-exclamation  ml-5 fa-xl text-danger mt-2 mr-2"></i>
-                    <span className="h5" style={{ color: "orange" }}>
+                    <span className="h5" style={{ color: "black" }}>
                       Disclaimer :
                     </span>{" "}
                     <span className="d-inline" style={{ color: "orange" }}>
@@ -79,7 +77,7 @@ const MyMoves = () => {
                     {/* collapse */}
                     <div className="collapse" id="collapseExample">
                       <div className="d-flex justify-content-between mt-4">
-                        <h5 style={{ color: "orange" }}>
+                        <h5 style={{ color: "Black" }}>
                           Additional Information
                         </h5>
                         <button className="btn btn-dark">
@@ -88,7 +86,7 @@ const MyMoves = () => {
                       </div>
                       Test Data
                       <div className="d-flex justify-content-between mt-4 mb-2">
-                        <h5 style={{ color: "orange" }}>House Details</h5>
+                        <h5 style={{ color: "Black" }}>House Details</h5>
                         <button className="btn btn-dark">
                           Edit House Details
                         </button>
@@ -98,7 +96,7 @@ const MyMoves = () => {
                       </h5>
                       <table
                         className="table table-borderless text-center"
-                        style={{ color: "orange" }}
+                        style={{ color: "Black" }}
                       >
                         <thead>
                           <tr>
@@ -122,7 +120,7 @@ const MyMoves = () => {
                       </h5>
                       <table
                         className="table table-borderless text-center"
-                        style={{ color: "orange" }}
+                        style={{ color: "Black" }}
                       >
                         <thead>
                           <tr>
@@ -142,7 +140,7 @@ const MyMoves = () => {
                         </tbody>
                       </table>
                       <div className="d-flex justify-content-between mt-2 mb-2">
-                        <h5 style={{ color: "orange" }}>Inventory Details</h5>
+                        <h5 style={{ color: "black" }}>Inventory Details</h5>
                         <button className="btn btn-dark">Edit Inventory</button>
                       </div>
                       {/* accordion */}
@@ -159,7 +157,7 @@ const MyMoves = () => {
                               data-bs-target="#flush-collapseOne"
                               aria-expanded="false"
                               aria-controls="flush-collapseOne"
-                              style={{ color: "orange" }}
+                              style={{ color: "#DC4C64" }}
                             >
                               Furniture
                             </button>
@@ -181,7 +179,7 @@ const MyMoves = () => {
                               data-bs-target="#flush-collapseTwo"
                               aria-expanded="false"
                               aria-controls="flush-collapseTwo"
-                              style={{ color: "orange" }}
+                              style={{ color: "#DC4C64" }}
                             >
                               Electronics
                             </button>

@@ -1,0 +1,40 @@
+.sidebar {
+    margin-top: 40px;
+    max-width: 200px;
+    width: 200px;
+    overflow:visible;
+    background-color: rgb(136, 201, 248);
+  }
+  
+  .sidebar-content {
+    padding-top: 0;
+    overflow-y:visible;
+  }
+  
+  .sidebar-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-menu-item:hover {
+    background-color: #ffffff;
+  }
+  
+  .sidebar-menu-item.selected {
+    background-color: #ffffff;
+  }
+  
+  .sidebar-icon {
+    margin-right: 8px;
+  }
+  
+  hr {
+    height: 2px;
+    background-color: orangered;
+    border: none;
+  }
+  

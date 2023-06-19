@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import SideNav from "./Sidebar/SideNav";
+import SideBar from "./Components/SideNav";
 
 const App = () => {
   return (
     <div>
       <Router>
-        <SideNav />
+        <SideBar />
       </Router>
     </div>
   );
