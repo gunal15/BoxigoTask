@@ -1,16 +1,16 @@
-import {Component} from 'react'
-import data from './data.json'
-import Navbar from './components/SideBar'
+import { Component } from "react";
+import data from "./data.json";
+import Navbar from "./components/SideBar";
 
-import MyMovesItem from './components/MovesItem'
+import MyMovesItem from "./components/MovesItem";
 
-import './App.css'
+import "./App.css";
 
 class App extends Component {
-  state = {customerDetailsData: data, activeId: '', itemChecked: false}
+  state = { customerDetailsData: data, activeId: "", itemChecked: false };
 
   componentDidMount() {
-    this.getData()
+    this.getData();
   }
 
   getData = async () => {
@@ -24,16 +24,16 @@ class App extends Component {
     // })
     // const jsonData = await response.json()
     // console.log(jsonData)
-  }
+  };
 
-  changeActiveId = estimateId => {
-    this.setState({activeId: estimateId})
-    this.setState(prevState => ({itemChecked: !prevState.itemChecked}))
-  }
+  changeActiveId = (estimateId) => {
+    this.setState({ activeId: estimateId });
+    this.setState((prevState) => ({ itemChecked: !prevState.itemChecked }));
+  };
 
-  getUpdatedCustomerDetailsData = customerDetailsData => {
+  getUpdatedCustomerDetailsData = (customerDetailsData) => {
     const customerDetailsList = customerDetailsData.Customer_Estimate_Flow.map(
-      each => ({
+      (each) => ({
         movingFrom: each.moving_from,
         movingTo: each.moving_to,
         estimateId: each.estimate_id,
@@ -50,26 +50,25 @@ class App extends Component {
         oldElevatorAvailability: each.old_elevator_availability,
         newParkingDistance: each.new_parking_distance,
         oldParkingDistance: each.old_parking_distance,
-      }),
-    )
-    return customerDetailsList
-  }
+      })
+    );
+    return customerDetailsList;
+  };
 
   render() {
-    const {customerDetailsData, activeId, itemChecked} = this.state
-    console.log(customerDetailsData)
+    const { customerDetailsData, activeId, itemChecked } = this.state;
+    console.log(customerDetailsData);
     const inventoryItemsData =
-      customerDetailsData.Customer_Estimate_Flow[0].items.inventory
-    const updatedCustomerDetailsData = this.getUpdatedCustomerDetailsData(
-      customerDetailsData,
-    )
+      customerDetailsData.Customer_Estimate_Flow[0].items.inventory;
+    const updatedCustomerDetailsData =
+      this.getUpdatedCustomerDetailsData(customerDetailsData);
     return (
       <div className="app-container">
         <Navbar />
         <div className="my-moves-container">
           <h1 className="my-moves-heading">MY MOVES</h1>
           <ul className="my-moves-list-container">
-            {updatedCustomerDetailsData.map(eachMovingItem => (
+            {updatedCustomerDetailsData.map((eachMovingItem) => (
               <MyMovesItem
                 movingItemDetails={eachMovingItem}
                 key={eachMovingItem.estimateId}
@@ -82,7 +81,7 @@ class App extends Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }
-export default App
+export default App;

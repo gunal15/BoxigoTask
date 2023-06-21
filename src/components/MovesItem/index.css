@@ -8,32 +8,32 @@
 }
 
 .arrow-container {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 20px;
   justify-content: center;
-  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  box-shadow: 0px 4px 16px 0px rgba(191, 191, 191, 0.7);
   margin-left: 30px;
 }
 
 .arrow {
   color: #ff5349;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .from-to-address-heading {
-  font-family: 'Roboto';
-  font-size: 17px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .from-to-address-description {
-  font-family: 'Roboto';
+  font-family: Arial, sans-serif;
   color: #475569;
-  font-size: 15px;
+  font-size: 18px;
   margin-top: 0px;
 }
 
@@ -43,29 +43,29 @@
 }
 
 .from-address-container {
-  width: 32%;
+  width: 35%;
 }
 
 .next-arrow-container {
-  width: 15%;
+  width: 20%;
   align-self: center;
 }
 
 .to-address-container {
-  width: 32%;
+  width: 35%;
 }
 
 .estimate-id-container {
-  width: 20%;
-  padding-left: 50px;
+  width: 10%;
+  padding-left: 20px;
 }
 
 .moving-details-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .moving-details-item-container {
@@ -75,13 +75,13 @@
 
 .moving-details-items-logo {
   color: #ff5349;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .moving-details-item-description {
-  font-family: 'Roboto';
+  font-family: Arial, sans-serif;
   color: #475569;
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 10px;
 }
 
@@ -92,31 +92,31 @@
 
 .checkbox {
   color: #ff5349;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .view-move-details-btn {
-  font-family: 'Roboto';
+  font-family: Arial, sans-serif;
   color: #ff5349;
-  font-size: 13px;
-  padding: 7px;
+  font-size: 16px;
+  padding: 10px;
   font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   border: 2px solid #ff5349;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: transparent;
 }
 
 .quotes-btn {
-  font-family: 'Roboto';
+  font-family: Arial, sans-serif;
   color: #fef2f4;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 7px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 5px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 8px;
   margin-left: 5px;
   border-width: 0px;
   background-color: #ff5349;
@@ -130,7 +130,7 @@
 
 .disclaimer-logo {
   color: #ff5349;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .disclaimer {
@@ -140,10 +140,10 @@
 
 .hr-line {
   background-color: #cbd2d9;
-  height: 1px;
+  height: 2px;
   border-width: 0px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .additional-information-container {
@@ -154,22 +154,22 @@
 
 .edit-additional-info-button {
   background-color: #000;
-  font-family: 'Roboto';
+  font-family: Arial, sans-serif;
   color: #fef2f4;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
   margin-left: 5px;
   border-width: 0px;
 }
 
 .additional-info-heading {
-  font-family: 'Roboto';
+  font-family: Arial, sans-serif;
   color: #000;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .existing-house-details-container {
@@ -178,9 +178,9 @@
 }
 
 .existing-house-details-item-heading {
-  font-family: 'Roboto';
+  font-family: Arial, sans-serif;
   color: #000;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .orange {
@@ -188,16 +188,16 @@
 }
 
 .existing-house-details-item {
-  margin-right: 150px;
+  margin-right: 200px;
 }
 
 .existing-house-details-item-description {
   color: #475569;
-  font-size: 15px;
-  font-family: 'Roboto';
+  font-size: 18px;
+  font-family: Arial, sans-serif;
 }
 
 .inventory-item-details-list-container {
   padding-left: 0px;
-  margin-top: 30px;
+  margin-top: 40px;
 }

@@ -2,6 +2,7 @@
   width: 25%;
   background-color: #f2f2f2;
   padding: 10px;
+  margin-right: 20px; /* Add padding to the right side */
 }
 
 .navbar-list-container {
@@ -25,7 +26,7 @@
 }
 
 .navbar-list-heading {
-  font-family: 'Roboto', sans-serif; /* Change the font style */
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   margin: 0;
   margin-left: 10px;
