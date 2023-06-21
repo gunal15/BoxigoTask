@@ -1,30 +1,32 @@
-import {IoIosArrowDown, IoIosArrowUp} from 'react-icons/io'
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-import InventoryDescription from '../Inventory'
+import InventoryDescription from "./Inventory";
 
-import './index.css'
+import "./inventoryitem.css";
 
-const InventoryItem = prop => {
+const InventoryItem = (prop) => {
   const {
     inventoryItemDetails,
     checkingInventoryItem,
     isInventoryItemChecked,
     isChecked,
-  } = prop
-  console.log(isChecked)
-  const {id, displayName, category} = inventoryItemDetails
-  const inventoryDetailsItemCountArray = category.map(each => each.items.length)
-  const itemsCount = inventoryDetailsItemCountArray.reduce((a, b) => a + b)
+  } = prop;
+  console.log(isChecked);
+  const { id, displayName, category } = inventoryItemDetails;
+  const inventoryDetailsItemCountArray = category.map(
+    (each) => each.items.length
+  );
+  const itemsCount = inventoryDetailsItemCountArray.reduce((a, b) => a + b);
 
-  const onClickingDropDownIcon = () => checkingInventoryItem(id)
+  const onClickingDropDownIcon = () => checkingInventoryItem(id);
 
   const toDisplayFurnitureItems = (
     <ul className="inventory-description-list-container">
-      {category.map(each => (
+      {category.map((each) => (
         <InventoryDescription itemDetails={each} key={each.id} />
       ))}
     </ul>
-  )
+  );
 
   return (
     <li className="inventory-item-details-list-item">
@@ -47,9 +49,9 @@ const InventoryItem = prop => {
           )}
         </button>
       </div>
-      {isInventoryItemChecked && isChecked ? toDisplayFurnitureItems : ''}
+      {isInventoryItemChecked && isChecked ? toDisplayFurnitureItems : ""}
     </li>
-  )
-}
+  );
+};
 
-export default InventoryItem
+export default InventoryItem;

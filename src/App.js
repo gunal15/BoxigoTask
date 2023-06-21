@@ -1,8 +1,8 @@
 import { Component } from "react";
 import data from "./data.json";
-import Navbar from "./components/SideBar";
+import Navbar from "./components/Navbar";
 
-import MyMovesItem from "./components/MovesItem";
+import MyMovesItem from "./components/MyMovesItem";
 
 import "./App.css";
 

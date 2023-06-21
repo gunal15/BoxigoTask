@@ -2,7 +2,7 @@ import { RiTruckFill, RiLogoutCircleRFill } from "react-icons/ri";
 import { FaUserAlt } from "react-icons/fa";
 import { HiClipboardList } from "react-icons/hi";
 
-import "./index.css";
+import "./navbar.css";
 
 const Navbar = () => (
   <div className="navbar-container">

@@ -1,25 +1,25 @@
-import {Component} from 'react'
-import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
-import {AiFillHome} from 'react-icons/ai'
-import {FaBoxes} from 'react-icons/fa'
-import {GiPathDistance} from 'react-icons/gi'
+import { Component } from "react";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { AiFillHome } from "react-icons/ai";
+import { FaBoxes } from "react-icons/fa";
+import { GiPathDistance } from "react-icons/gi";
 import {
   BsCalendar2CheckFill,
   BsPen,
   BsFillExclamationTriangleFill,
-} from 'react-icons/bs'
-import {IoCheckbox} from 'react-icons/io5'
-import InventoryDetailsItem from '../InventoryItem'
+} from "react-icons/bs";
+import { IoCheckbox } from "react-icons/io5";
+import InventoryDetailsItem from "./InventoryItem";
 
-import './index.css'
+import "./moveitem.css";
 
 class MyMovesItem extends Component {
-  state = {inventoryItemId: '', isChecked: false}
+  state = { inventoryItemId: "", isChecked: false };
 
-  checkingInventoryItem = id => {
-    this.setState({inventoryItemId: id})
-    this.setState(prevState => ({isChecked: !prevState.isChecked}))
-  }
+  checkingInventoryItem = (id) => {
+    this.setState({ inventoryItemId: id });
+    this.setState((prevState) => ({ isChecked: !prevState.isChecked }));
+  };
 
   render() {
     const {
@@ -28,9 +28,9 @@ class MyMovesItem extends Component {
       changeActiveId,
       inventoryItemsData,
       itemChecked,
-    } = this.props
-    const {inventoryItemId, isChecked} = this.state
-    console.log(inventoryItemId)
+    } = this.props;
+    const { inventoryItemId, isChecked } = this.state;
+    console.log(inventoryItemId);
     const {
       movingFrom,
       movingTo,
@@ -48,9 +48,9 @@ class MyMovesItem extends Component {
       oldElevatorAvailability,
       newParkingDistance,
       oldParkingDistance,
-    } = movingItemDetails
+    } = movingItemDetails;
 
-    const onClickingViewMoveBtn = () => changeActiveId(estimateId)
+    const onClickingViewMoveBtn = () => changeActiveId(estimateId);
 
     const getFromToAddressContainer = (
       <div className="from-to-address-container">
@@ -74,7 +74,7 @@ class MyMovesItem extends Component {
           </p>
         </div>
       </div>
-    )
+    );
 
     const getMovingDetailsContainer = (
       <div className="moving-details-container">
@@ -110,7 +110,7 @@ class MyMovesItem extends Component {
           </button>
         </div>
       </div>
-    )
+    );
 
     const getViewMoveDetails = (
       <div>
@@ -196,7 +196,7 @@ class MyMovesItem extends Component {
             </button>
           </div>
           <ul className="inventory-item-details-list-container">
-            {inventoryItemsData.map(each => (
+            {inventoryItemsData.map((each) => (
               <InventoryDetailsItem
                 inventoryItemDetails={each}
                 key={each.id}
@@ -208,7 +208,7 @@ class MyMovesItem extends Component {
           </ul>
         </div>
       </div>
-    )
+    );
 
     return (
       <li className="my-moves-list-item">
@@ -221,11 +221,11 @@ class MyMovesItem extends Component {
             move date before two days of shifting
           </p>
         </div>
-        {isActive && itemChecked ? getViewMoveDetails : ''}
+        {isActive && itemChecked ? getViewMoveDetails : ""}
         <hr className="hr-line" />
       </li>
-    )
+    );
   }
 }
 
-export default MyMovesItem
+export default MyMovesItem;
